@@ -1,4 +1,7 @@
+import psycopg2
 from bottle import route, run, request
+
+DSN = 'dbname=email_sender'
 
 @route('/', method='POST')
 def send():
